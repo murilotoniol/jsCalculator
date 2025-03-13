@@ -1,0 +1,17 @@
+UPDATE TBCONFIGURACAO 
+SET CONTEUDO = REPLACE(CONTEUDO,'\\SERVIDORATAK\SISATAK\','\\atakserver\implantacao\Clientes\PADRAO\')
+
+Fazer o select para verificar o endereço das pastas e depois o UPDATE com os endereços corretos
+
+SELECT * FROM tbConfiguracao
+WHERE Conteudo LIKE '%\\%'
+
+
+DESKTOP-R5JSI88
+
+
+UPDATE TBCONFIGURACAO 
+SET CONTEUDO = REPLACE(CONTEUDO,'\\ntfranbov','\\atakfs\implantacao\Clientes\Franbov')
+
+UPDATE TBCONFIGURACAO 
+SET CONTEUDO = REPLACE(CONTEUDO,'\\SERVIDOR\SISATAK\','\\DESKTOP-R5JSI88\Sisatak\')

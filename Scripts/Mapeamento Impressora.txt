@@ -1,0 +1,14 @@
+@echo off
+cls
+cd\
+echo
+net use lpt1 /d
+echo Porta Deletada
+echo
+net use
+echo
+net use lpt1 \\almoxarifado\zebra
+net use
+echo Impressora Conectada
+pause
+exit
